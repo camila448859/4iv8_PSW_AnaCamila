@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+
+body{
+    background-image: url(../Imagenes/fondi.jpg) ;
+    background-size: cover;
+}
+
+@keyframes animada_test{
+    from{
+        background-color: rgb(200, 121, 224);
+    }
+    to{
+        background-color: lightskyblue;
+    }
+}
+
+.animacion{
+    width: 100%;
+    background-color:rgb(200, 121, 224);
+    color:black;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    animation: animada_test 2s alternate infinite;
+}
+
+article, aside{
+    background-color: rgb(221, 195, 230);
+    width: 40%;
+    display: inline-block;
+    height: 200px;
+    border: 2px solid rgba(3, 73, 94, 0.133);
+    margin: 1rem;
+    border-radius: 10px;
+    padding:1rem;
+}
