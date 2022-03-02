@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-style: italic;
+}
+
+body{
+    background-image: url(../Imagenes/fondoo.jpg) ;
+    background-size: cover;
+}
+
+@keyframes animada_test{
+    from{
+        background-color: rgb(200, 121, 224);
+    }
+    to{
+        background-color: lightskyblue;
+    }
+}
+
+.animacion{
+    width: 100%;
+    background-color:rgb(200, 121, 224);
+    color:black;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    animation: animada_test 2s alternate infinite;
+}
+
+aside{
+    background-color: rgb(150, 106, 207);
+    width: 50%;
+    display: inline-block;
+    height: 50px;
+    padding: 10px;
+}
