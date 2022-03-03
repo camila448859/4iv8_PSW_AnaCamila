@@ -13,7 +13,7 @@ input{
     height: 30px;
 }
   
-  /* form*/
+
   .form {
     background: #fff;
     box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
@@ -88,7 +88,7 @@ input{
     border-radius: 0%;
   }
 
-/*Radius bottom*/
+
 ul li{
     color: #0e3721;
     display: block;
@@ -168,8 +168,7 @@ table {
 tbody>tr {
 	display:flex;
 	width:100%;
-	background:MediumSeaGreen
-    ;
+	background:MediumSeaGreen;
 	padding:($half-spacing-unit * 1.5) 0;
 }
 
