@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../ProblemasJS/JavaScript/algoritmo.js"></script>
+    <title>Ejercicios de JavaScript</title>
+</head>
+<body>
+    <form name="Formulario 1">
+        <table style="text-align: left; margin-left: auto; margin-right: auto; ">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="cap_inicial">Ingresa el captal inicial: </label>
+                    </td>
+                    <td>
+                        <input name="cap_inicial" required="required" step="0.000001" type="number"/>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2" rowspan="1">
+                        <input value="Procesar" type="button" onclick="algoritmo();"/>
+                        <input type="reset"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cap_final">Valor de capital final:</label>
+                    </td>
+                    <td>
+                        <input name="cap_final" step="0.000001" type="number" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
