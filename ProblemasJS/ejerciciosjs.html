@@ -8,33 +8,63 @@
     <title>Ejercicios de JavaScript</title>
 </head>
 <body>
-    <form name="Formulario 1">
-        <table style="text-align: left; margin-left: auto; margin-right: auto; ">
-            <tbody>
+    <div class="ejercicio_contenedor">
+        <!--Ejercicio 1-->
+        <form method="post" name="ejercicio1"  action="">
+            <label>
+                <h3>
+                    <p>Suponga que un individuo desea invertir su capital en un banco
+                    y desea saber cuánto dinero ganará después de un mes si el banco 
+                    paga a razón de 2% mensual.</p>
+                </h3>
+            <p>Pagar a razon del 2% mensual.</p>
+            </label>
+            <table>
                 <tr>
-                    <td>
-                        <label for="cap_inicial">Ingresa el captal inicial: </label>
-                    </td>
-                    <td>
-                        <input name="cap_inicial" required="required" step="0.000001" type="number"/>
-                    </td>
-                </tr>
-                <tr align="center">
-                    <td colspan="2" rowspan="1">
-                        <input value="Procesar" type="button" onclick="algoritmo();"/>
-                        <input type="reset"/>
-                    </td>
+                    <td>Ingrese la capital que desee invertir: </td>
+                    <td><input type="text" name="cantidad" onkeypress="return validarc(event)" placeholder="Cantidad"></td>
                 </tr>
                 <tr>
-                    <td>
-                        <label for="cap_final">Valor de capital final:</label>
-                    </td>
-                    <td>
-                        <input name="cap_final" step="0.000001" type="number" />
-                    </td>
+                    <td></td>
+                    <td><input type="button" value="Interes" onclick="interes()"></td>
                 </tr>
-            </tbody>
-        </table>
-    </form>
+                <tr>
+                    <td>El saldo mensual es de: </td>
+                    <td><input type="text" name="sueldoT"  readonly="readonly"  placeholder="Cantidad Total"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="borrar" value="borrarDatos" onclick="borrardatos()"></td>
+                </tr>
+            </table>
+        </form>
+
+
+
+        <!--Ejercicio 5-->
+
+
+        <!--Ejercicio 6-->
+        <div class="caja">
+            <h1>Calcular Edad de una persona</h1>
+            <p>Escriba su dia , mes y año de nacicmiento para calcular <br />su edad actual </p> 
+            <p>NOTA:el mes que va a ingresar tene que ser en <span>numeros</span></p>
+            
+              <label for="">Ingresa tu dia de nacimiento: </label>
+              <input type="text" id="dia">
+            <br>
+         
+               <label for="">Ingrese el mes de nacimiento: </label>
+               <input type="text" id="mes">
+            
+            <label for="">Ingrese año de nacimiento </label>
+              <input type="text" id="anio">
+            <br/>
+           
+              <button onclick="calculaEdad()">CALCULAR</button>
+              <p class="res">Respuesta</p>
+              <div id="salida">_</div>
+         </div>
+    </div>
 </body>
 </html>
