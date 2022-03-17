@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../ProblemasJS/JavaScript/algoritmo.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Ejercicios de JavaScript</title>
 </head>
 <body>
@@ -39,9 +40,152 @@
             </table>
         </form>
 
+        <!--Ejercicio 2-->
+        <form method="post" name="ejercicio2">
+            <label>
+                <h2>
+                    <p>Un vendedor recibe un sueldo base mas de un 10% extra por comision de sus ventas, 
+                    el vendedor desa saber cunato dinero obtendrá por concepto de comisiones por las tres ventas
+                    que realiza en el mes y el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones.</p>
+                </h2>
+            </label>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Ingresa la cantidad que tienes como sueldo base: </td>
+                        <td>
+                            <input type="text" name="sueldo_base" onkeypress="return suendo(event)" placeholder="sueldo base">
+                        </td>
+                    </tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="ventas" onclick="comision()" readonly="readonly">
+                    </td>
+                    <tr>
+                        <td>Tu sueldo mas la cantidad de tus ventas es: </td>
+                        <td>
+                            <input type="text" name="Total" readonly="readonly" placeholder="sueldototal">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
 
+        <!--Ejercicio 3-->
+        <div class="contenedor">
+            <form method="post" name="ejercicio3">
+                <label>
+                    <h3>
+                        <p>
+                            Una tienda ofrece un descuento del 15% sobre el total de la comra
+                        y un cliente desa saber cuanto debera pagar finalmente por su compra.
+                        </p>
+                    </h3>
+                </label>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Ingresa cuanto es de tu compra total: </td>
+                            <td>
+                                <input type="text" name="totalCompra" onkeypress="return total(event)" placecholder="Ingresa total">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="descuento" onclick="calcular()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>MEnos el 15% de descuento el total es: </td>
+                            <td>
+                                <input type="text" name="CDescuento" readonly="readonly" placeholder="total">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="borrar" onclick="borrarDatos()">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
 
-        <!--Ejercicio 5-->
+        <!--Ejercicio 4-->
+        <form action name="ejercicio4" method="post">
+            <label>
+                <h2>Un alumno desea saber cual sera su calificacion final en la materia de Algoritmos.
+                Dicha calificacion se compone de los siguientes porcentajes:
+                <br>55% del promedio de sus tres calificaciones parciales
+                <br>30% de la calificacion del examen final
+                <br>15% de la calificacion del trabajo final
+                </h2>
+            </label>
+            <div class="principal">
+                <div class="parciales">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Primer parcial: </td>
+                                <td>
+                                    <input type="text" name="parcial1" onkeypress=" return validar(event)">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Segundo parcial: </td>
+                                <td>
+                                    <input type="text" name="parcial2" onkeypress=" return validar(event)">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tercer parcial: </td>
+                                <td>
+                                    <input type="text" name="parcial3" onkeypress=" return validar(event)">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="button" name="Promediof" value="Calcular promedio" onclick="promediop()">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tu promedio es de: </td>
+                                <td>
+                                    <input type="text" name="CalificacionF" readonly="readonly">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="button" name="borrar" value="borrar" onclick="borrardatos()">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="Calificaciones">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Calificacion trabajo final: </td>
+                                <td>
+                                    <input type="text" name="cTrabajo" onkeypress="return validar(event)" placeholder="Calificacion trabajo final">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Calificacion examen: </td>
+                                <td>
+                                    <input type="text" name="cExamen" onkeypress="return validar(event)" placeholder="Calificacion final..." readonly="readonly">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </form>
 
 
         <!--Ejercicio 6-->
