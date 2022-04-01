@@ -40,6 +40,8 @@ public class EliminarAlumno extends HttpServlet {
         //se dene de establecer los elementos para la conexion con bd
         String url = "jdbc:mysql:3306//localhost/alumnos";
                    //controlador:motorBD:puerto//IP/nombreBD
+        //String username = "CAMILA";
+        //String password = "CAMILA";        
         String username = "root";
         String password = "n0m3l0";
         

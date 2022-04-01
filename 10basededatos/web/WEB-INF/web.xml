@@ -12,6 +12,10 @@
         <servlet-name>RegistrarAlumnos</servlet-name>
         <servlet-class>RegistrarAlumnos</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ActualizarDatosAlumno</servlet-name>
+        <servlet-class>ActualizarDatosAlumno</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ConsultarAlumnos</servlet-name>
         <url-pattern>/ConsultarAlumnos</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>RegistrarAlumnos</servlet-name>
         <url-pattern>/RegistrarAlumnos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActualizarDatosAlumno</servlet-name>
+        <url-pattern>/ActualizarDatosAlumno</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

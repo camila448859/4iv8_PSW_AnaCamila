@@ -18,13 +18,14 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Alumno
+ * @author anaca
  */
-public class RegistrarAlumnos extends HttpServlet {
-
+public class ActualizarDatosAlumno extends HttpServlet {
+    
     private Connection con;
     private Statement set;
     private ResultSet rs;
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -37,10 +38,10 @@ public class RegistrarAlumnos extends HttpServlet {
     
     public void init(ServletConfig scg) throws ServletException{
         //se dene de establecer los elementos para la conexion con bd
-        String url = "jdbc:mysql:3306//localhost/alumnos";
+        String url = "jdbc:mysql:8080//localhost/alumnos";
                    //controlador:motorBD:puerto//IP/nombreBD
         //String username = "CAMILA";
-        //String password = "CAMILA";           
+        //String password = "CAMILA";
         String username = "root";
         String password = "n0m3l0";
         
@@ -60,6 +61,7 @@ public class RegistrarAlumnos extends HttpServlet {
         
         }
     }
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
@@ -78,7 +80,6 @@ public class RegistrarAlumnos extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
-        
     }
 
     /**
@@ -92,57 +93,73 @@ public class RegistrarAlumnos extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+            response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Registro Alumnos</title>");            
+            out.println("<title>Actualizacion de Alumnos</title>");            
             out.println("</head>");
             out.println("<body>");
             out.println("</body>");
             out.println("</html>");
             
-             try{
-                //obtener los parametros para poder
-                //insertarlos en la BD
-                String nom, appat, apmat, tel;
-                int boleta;
+            try{
+                String nom;
                 
-                nom = request.getParameter("nombre");
-                appat = request.getParameter("appat");
-                apmat = request.getParameter("apmat");
-                tel = request.getParameter("telefono");
-                boleta = Integer.parseInt(request.getParameter("boleta"));
+                int men = Integer.parseInt(request.getParameter("menu"));
+                int bol = Integer.parseInt(request.getParameter("boleta"));
                 
-                System.out.println(nom);
-                System.out.println(appat);
-                System.out.println(apmat);
-                System.out.println(tel);
-                System.out.println(boleta);
+                nom = request.getParameter("nombre"); 
                 
-                String q = "insert into alumnobatiz "
-                        + "values ("+boleta+", '"+nom+"', '"+appat+"', '"+apmat+"', '"+tel+"')";
                 
-                //se debe de preparar ejecutar la sentencia
+                if(men==1){
+                    String q = "update alumnobatiz set nombre='"+nom+"'where boleta="+bol;
+                    set.executeUpdate(q);
+                }else if(men==2){
+                    String q = "update alumnobatiz set appat='"+nom+"'where boleta="+bol;
+                    set.executeUpdate(q);
+                }else if(men==3){
+                    String q = "update alumnobatiz set apmat='"+nom+"'where boleta="+bol;
+                    set.executeUpdate(q);
+                }else if (men==4){
+                    String q = "update alumnobatiz set boleta='"+nom+"'where boleta="+bol;
+                    set.executeUpdate(q);
+                }else if(men==5){
+                    String q = "update alumnobatiz set telefono='"+nom+"'where boleta="+bol;
+                    set.executeUpdate(q);
+                }else{
+                    out.println("<h1>Error no se pudo editar</h1>");
+                }
+                
+                
+
+                String q = "update alumnobatiz set nombre='"+nom+"'where boleta="+bol;
                 
                 set.executeUpdate(q);
-                out.println("<h1>Alumno Registrado con Exito</h1>");
-                System.out.println("Dato registrado");
-            
-            }catch(Exception e){
+                out.println("<h1>Alumno Actualizado</h1>");
+                System.out.println("Dato actualizado");
                 
-                System.out.println("No se pudo registrar verificar los datos de entrada");
+                
+            }catch(Exception e){
+                System.out.println("Error no se puede editar");
                 System.out.println(e.getMessage());
                 System.out.println(e.getStackTrace());
-                out.println("<h1>Alumno No se pudo Registrar, hay un error</h1>");
-            
+                out.println("<h1>Error no se pudo editar</h1>");
+               
             }
-             out.println("<a href='ConsultarAlumnos' >Consultar Alumnos</a>");
+           
+            out.println("<a href='Consulta'>Consulta</a>");
+            out.println("<br>");
+            out.println("<br>");
+            out.println("<a href='index.html'>Volver a Actualizar</a>");
             out.println("</body>");
             out.println("</html>");
         }
     }
+        
+
 
     /**
      * Returns a short description of the servlet.
