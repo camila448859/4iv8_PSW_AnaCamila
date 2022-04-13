@@ -19,42 +19,51 @@ function problema1(){
 //problema 2
 
 function problema2(){
+    //obtener los valores de los campos de texto
+    var p2_x1 = document.querySelector('#p2-x1').value;
+    var p2_x2 = document.querySelector('#p2-x2').value;
+    var p2_x3 = document.querySelector('#p2-x3').value;
+    var p2_x4 = document.querySelector('#p2-x4').value;
+    var p2_x5 = document.querySelector('#p2-x5').value;
 
-    p2_x1=document.querySelector("#p2-x1").value;
-    p2_x2=document.querySelector("#p2-x2").value;
-    p2_x3=document.querySelector("#p2-x3").value;
-    p2_x4=document.querySelector("#p2-x4").value;
-    p2_x5=document.querySelector("#p2-x5").value;
+    var p2_y1 = document.querySelector('#p2-y1').value;
+    var p2_y2 = document.querySelector('#p2-y2').value;
+    var p2_y3 = document.querySelector('#p2-y3').value;
+    var p2_y4 = document.querySelector('#p2-y4').value;
+    var p2_y5 = document.querySelector('#p2-y5').value;
 
-    p2_y1=document.querySelector("#p2-y1").value;
-    p2_y2=document.querySelector("#p2-y2").value;
-    p2_y3=document.querySelector("#p2-y3").value;
-    p2_y4=document.querySelector("#p2-y4").value;
-    p2_y5=document.querySelector("#p2-y5").value;
+    /*
+    para encontrar el mínimo producto escalar entre 2 vectores,
+    tenemos que realizar las operaciones correspondientes que son 
+    con el máximo valor de un vector por el mínimo valor del otro vector. 
+    */
 
-    //definir vectores
-    var V1=[p2_x1,p2_x2,p2_x3,p2_x4,p2_x5];
-    var V2=[p2_y1,p2_y2,p2_y3,p2_y4,p2_y5];
+    //construcción de vectores
+    var v1 = [p2_x1, p2_x2, p2_x3, p2_x4, p2_x5];
+    var v2 = [p2_y1, p2_y2, p2_y3, p2_y4, p2_y5];
 
-    V1=V1.sort(function (a,b){
+    //ordenar vectores
+    v1 = v1.sort(function(a,b){
         return b-a;
+    });
 
-    })
-    V2=V2.sort(function (a,b){
-       return b-a;
-       
-   })
+    v2 = v2.sort(function(a,b){
+        return b-a;
+    });
 
-   V2=V2.reverse();
+    //invertir el vector 2
+    v2 = v2.reverse();
 
-   var p2_p=0;
-   for(var i=0;i< v1.length;i++){
-       p2_p += v1[i]*v2[i];
-   }
+    //producto
+    var p2_producto = 0;
 
+    for(var i = 0; i < v1.length; i++){
+        p2_producto += v1[i]*v2[i];
+    }
 
-   document.querySelector('#p2-output').textContent="Producto escalar minimo: " + p2_producto;
-
+    //imprimir resultado
+    document.querySelector('#p2-output').textContent = 
+    'Producto escalar mínimo: '+ p2_producto;
 }
 // problema 3
 

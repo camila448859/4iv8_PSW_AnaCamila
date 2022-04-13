@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+ <html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body style="background-image:url(../Fotos/fondo1.jpg) ;" class="xd" aling="center">
+    <center>
+        <h1>REGISTRARSE</h1>
+        <br>
+        <div class="formulario" align="center">
+            
+            <form method="post" name="formulario1" action="registroalumno.jsp">
+                <label>Nombre</label>
+                <br>
+                <input type="text" maxlength="30" name="nombre" required="true" 
+                       onkeypress="return(event.charCode >=65 && event.charCode <=90 || event.charCode >=97 && event.charCode <=122 || event.charCode ==32 )">
+                <br>
+                <label>Apellido Paterno</label>
+                <br>
+                <input type="text" maxlength="15" name="appat" required="true"
+                       onkeypress="return(event.charCode >=65 && event.charCode <=90 || event.charCode >=97 && event.charCode <=122 || event.charCode ==32 )">
+                <br>
+                <label>Apellido Materno</label>
+                <br>
+                <input type="text" maxlength="15" name="apmat" required="true"
+                       onkeypress="return(event.charCode >=65 && event.charCode <=90 || event.charCode >=97 && event.charCode <=122 || event.charCode ==32 )">
+                
+                <br>
+                <label>Telefono</label>
+                <br>
+                <input type="text" maxlength="10" name="tel" required="true"
+                       onkeypress="return(event.charCode >=48 && event.charCode <=57)">
+                
+                <br>
+                <label>Boleta</label>
+                <br>
+                <input type="text" name="bol" maxlength="10" required="true"
+                       onkeypress="return(event.charCode >=48 && event.charCode <=57)">
+                <br>
+                <input type="submit" value="Registrar Alumno">
+                <br>
+                <input type="reset" value="Borrar Registro">
+            </form>
+            <br>
+            <a href="consultaralumno.jsp">Consultar Alumnos</a>
+        </div>
+        </center>
+    </body>
+</html>
