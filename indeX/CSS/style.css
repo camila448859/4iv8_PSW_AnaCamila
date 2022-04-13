@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-style: italic;
+
+}
+.uno{
+    border-radius: 25px;
+    background-color: #a3806c; 
+    margin:2rem;
+    border: 4px solid #061d1a;
+}
+
+.dos{
+    border-radius: 25px;
+    background-color: #b49378; 
+    margin:2rem;
+    border: 4px solid #061d1a;
+}
+
+.tres{
+    border-radius: 25px;
+    background-color: #c2be9d; 
+    margin:2rem;
+    border: 4px solid #061d1a;
+}
+
+.cuatro{
+    border-radius: 25px;
+    background-color: #e0e0cc; 
+    margin:2rem;
+    border: 4px solid #061d1a;
+}
+
+.cinco{
+    border-radius: 25px;
+    background-color: #a3806c; 
+    margin:2rem;
+    border: 4px solid #061d1a;
+}
+
+.seis{
+    border-radius: 25px;
+    background-color: #b49378; 
+    margin:2rem;
+    border: 4px solid #061d1a;
+}
+
+.siete{
+    border-radius: 25px;
+    background-color: #c2be9d; 
+    margin:2rem;
+    border: 4px solid #061d1a;
+}
+
+.ocho{
+    border-radius: 25px;
+    background-color: #e0e0cc; 
+    margin:2rem;
+    border: 4px solid #061d1a;
+}
+
+.nueve{
+    border-radius: 25px;
+    background-color: #a3806c;
+    margin:2rem;
+    border: 4px solid #061d1a;
+}
+
+.diez{
+    border-radius: 25px;
+    background-color: #b49378; 
+    margin:2rem;
+    border: 4px solid #061d1a;
+}
