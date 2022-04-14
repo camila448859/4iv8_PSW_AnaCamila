@@ -53,7 +53,7 @@
                 
                  set= con.createStatement();
                  
-                 String q= "insert into alumnobatiz "
+                 String q= "insert into alumnosbatiz "
                     + "values("+bol+", '"+nom+"', '"+appat+"', '"+apmat+"', '"+tel+"')";
                  
                  int registro= set.executeUpdate(q);

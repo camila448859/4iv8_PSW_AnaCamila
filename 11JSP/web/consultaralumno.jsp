@@ -48,7 +48,7 @@
             con = DriverManager.getConnection(url, username, password);
             
             try{
-                String q = "select * from alumnobatiz order by boleta asc";
+                String q = "select * from alumnosbatiz order by boleta asc";
                 
                 set = con.createStatement();
                 

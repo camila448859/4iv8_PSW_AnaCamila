@@ -39,7 +39,7 @@
             try{
                 int id = Integer.parseInt(request.getParameter("id"));
                 
-                String q = "select * from alumnobatiz where boleta ="+id;
+                String q = "select * from alumnosbatiz where boleta ="+id;
                 
                 set = con.createStatement();
                 

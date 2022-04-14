@@ -37,10 +37,10 @@ public class ConsultarAlumnos extends HttpServlet {
         //se dene de establecer los elementos para la conexion con bd
         String url = "jdbc:mysql:3306//localhost/alumnos";
                    //controlador:motorBD:puerto//IP/nombreBD
-        //String username = "CAMILA";
-        //String password = "CAMILA";           
-        String username = "root";
-        String password = "n0m3l0";
+        String username = "CAMILA";
+        String password = "CAMILA";           
+        //String username = "root";
+        //String password = "n0m3l0";
         
         try{
             //internat conectar a la bd
@@ -49,10 +49,10 @@ public class ConsultarAlumnos extends HttpServlet {
             con = DriverManager.getConnection(url, username, password);
             set = con.createStatement();
             
-            System.out.println("Si conecto a la BD :3 *w* ");
+            System.out.println("Si conecto a la BD #feli");
             
         }catch(Exception e){
-            System.out.println("No conecto, solo juguito contigo uwu");
+            System.out.println("No conecto, ni modo");
             System.out.println(e.getMessage());
             System.out.println(e.getStackTrace());
         
@@ -128,7 +128,7 @@ public class ConsultarAlumnos extends HttpServlet {
                 
             
             }catch(Exception e){
-                System.out.println("Error al conectar la tabla T_T");
+                System.out.println("Error al conectar la tabla");
                 System.out.println(e.getMessage());
                 System.out.println(e.getStackTrace());
             

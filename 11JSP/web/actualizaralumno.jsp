@@ -43,7 +43,7 @@
                  
                  set= con.createStatement();
                  
-                 String q= "update alumnobatiz set nombre='"+nom+"', "
+                 String q= "update alumnosbatiz set nombre='"+nom+"', "
                  + "appat= '"+appat+"', apmat='"+apmat+"', "
                  + "telefono='"+tel+"' "
                  + "where boleta="+bol+" ";
