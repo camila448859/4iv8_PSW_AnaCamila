@@ -6,72 +6,106 @@
     font-style: italic;
 
 }
-.uno{
-    border-radius: 25px;
-    background-color: #a3806c; 
-    margin:2rem;
+body{
+    background-color: #f0eb95;
+}
+@keyframes animada_test{
+    from{
+        background-color:#f289e7;
+    }
+    to{
+        background-color: #efc46c;
+    }
+}
+.titulo{
+    font-family: cursive, Lucida Handwriting;
     border: 4px solid #061d1a;
+    border-radius: 15px;
+    width: 100%;
+    color:black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    animation: animada_test 1s alternate infinite;
+}
+
+
+.uno{
+    border-radius: 15px;
+    background-color:#9febe7; 
+    margin:1rem;
+    border: 4px solid #061d1a;
+    width: 31%;
 }
 
 .dos{
-    border-radius: 25px;
-    background-color: #b49378; 
+    border-radius: 15px;
+    background-color:#9febe7; 
     margin:2rem;
     border: 4px solid #061d1a;
+    width: 30%;
 }
 
 .tres{
-    border-radius: 25px;
-    background-color: #c2be9d; 
+    border-radius: 15px;
+    background-color:#9febe7; 
     margin:2rem;
     border: 4px solid #061d1a;
+    width: 30%;
 }
 
 .cuatro{
-    border-radius: 25px;
-    background-color: #e0e0cc; 
+    border-radius: 15px;
+    background-color:#9febe7; 
     margin:2rem;
     border: 4px solid #061d1a;
+    width: 30%;
 }
 
 .cinco{
-    border-radius: 25px;
-    background-color: #a3806c; 
+    border-radius: 15px;
+    background-color: #9febe7; 
     margin:2rem;
     border: 4px solid #061d1a;
+    width: 30%;
 }
 
 .seis{
-    border-radius: 25px;
-    background-color: #b49378; 
+    border-radius: 15px;
+    background-color: #9febe7; 
     margin:2rem;
     border: 4px solid #061d1a;
+    width: 30%;
 }
 
 .siete{
-    border-radius: 25px;
-    background-color: #c2be9d; 
+    border-radius: 15px;
+    background-color: #9febe7; 
     margin:2rem;
     border: 4px solid #061d1a;
+    width: 30%;
 }
 
 .ocho{
-    border-radius: 25px;
-    background-color: #e0e0cc; 
+    border-radius: 15px;
+    background-color:#9febe7 ; 
     margin:2rem;
     border: 4px solid #061d1a;
+    width: 30%;
 }
 
 .nueve{
-    border-radius: 25px;
-    background-color: #a3806c;
+    border-radius: 15px;
+    background-color:#9febe7;
     margin:2rem;
     border: 4px solid #061d1a;
+    width: 30%;
 }
 
 .diez{
-    border-radius: 25px;
-    background-color: #b49378; 
+    border-radius: 15px;
+    background-color:#9febe7; 
     margin:2rem;
     border: 4px solid #061d1a;
+    width: 30%;
 }
