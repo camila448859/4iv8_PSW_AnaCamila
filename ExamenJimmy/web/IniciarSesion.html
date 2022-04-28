@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Iniciar Sesión</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <div class="main-contaiener">
+        <header>
+            <div class="botones">
+                <a href=""><img src="../13ExamenServle/imagen poli.jpg" alt="imagen poli" style="width: 80px; height: 80px;"></a>
+                <nav>
+                    <ul>
+                        <li class="lista"><button class="boton"  type="button" value="Iniciar Sesión" onclick="location.href='../13ExamenServle/iniciarS.html'">Iniciar Sesión</button> </li>
+                        <li class="lista"> <button class="boton"  type="button" value="Registrar" onclick="location.href='../13ExamenServle/registro.html'">Registarse</button></li>
+                    </ul>
+    
+                </nav>
+    
+            </div>
+    
+            </header>
+    <div class="inicioS">
+        <form method="post" name="realizar" action="">
+            <label>
+                <h2 style="text-align: center;">Iniciar Sesion</h2>
+            </label>
+            <table>
+                <tr>
+                    <td>Usuario: </td>
+                    <td><input type="text" class="inpt-reporte" id="user" ></td>
+                </tr>
+                <tr>
+                    <td>Contraseña: </td>
+                    <td><input type="text" class="inpt-reporte" id="pass" ></td>
+                </tr>
+               
+            </table>
+            <input type="submit" onclick="iniciar()" value="iniciar docente">
+            <br>
+            <br>
+            <input type="reset" value="borrar datos">
+            <br>
+            <a href="index.html">Regresar al inicio</a>
+        </form>
+    </div>
+    </body>
+</html>

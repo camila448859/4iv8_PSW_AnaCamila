@@ -1,0 +1,141 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27/04/2022, 10:58:02 AM
+    Author     : ommyr
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.lista{
+    
+        float: left;
+        list-style: none;
+        padding: 15px;
+        font-size: x-large;
+        background-color: #800040;
+  
+}
+header{
+    background-color: #800040;
+    height: 80px;
+}
+nav{    
+    float: right;
+    margin-top: none;
+    margin-right: 1rem;
+
+}
+.boton:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button.boton{
+    border: 3px solid black;
+    background-color:white;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0;
+    border-radius: 100px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),
+                0 1px 2px rgba(0,0,0,0.12);
+    width: 180px;
+    height: 5px;
+    padding-bottom: 1rem;
+    
+}
+.bienvenidos{
+    width: 800px;
+    height: 600px;
+    background-color: #800040;
+    margin:auto;
+    margin-top: 2rem;
+    font-family: Arial;
+    border: 3px solid #120907;
+    border-radius: 5%;
+    color: white;
+    margin-left: 300px;
+}
+.menu{
+    font-size: xx-large;
+    width:180px;
+    height: 800px;
+    background-color: #800040;
+}
+.InicioSesion{
+    width: 800px;
+    height: 600px;
+    background-color: #717976;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+li.listadesple:hover a{ 
+    color: white;
+
+}
+li.listadesple{
+    list-style: none;
+    padding-top: 6rem;
+}
+.desple{
+    list-style: none;
+    display:none;
+}
+li .desple:hover a{
+    color: #ffda53;
+     display: block;
+    float: left;
+    padding: 1em;
+    
+}
+.listadesple:hover .desple{
+    display: block;
+    float: left;
+    padding: 1em;
+}
+
+.main{
+    background-color: #800040;
+    width: 800px;
+    height: 500px;
+    border-radius: 2%;
+    border: 3px solid #120907;
+    margin-top: 2rem;
+    margin-left: 300px;
+}
+
+.inpt-reporte:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.registro{
+
+    background-color: #800040;
+    width: 700px;
+    height: 500px;
+    border-radius: 2%;
+    border: 3px solid #120907;
+    margin-top: 2rem;
+    margin-left: 500px;
+}
+
+.inicioS{
+    background-color: #800040;
+    width: 500px;
+    height: 300px;
+    border-radius: 2%;
+    border: 3px solid #120907;
+    margin-top: 2rem;
+    margin-left: 500px;
+}

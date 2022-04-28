@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>LABORATORIO DE NUEVAS TECONOLOGÍAS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+                <header>
+            
+        <div class="botones">
+
+            <nav>
+                <ul>
+                    <li class="lista"><button class="boton"  type="button" value="Iniciar Sesión" onclick="location.href='../13ExamenServle/iniciarS.html'">Iniciar Sesión</button> </li>
+                    <li class="lista"> <button class="boton"  type="button" value="Registrar" onclick="location.href='../13ExamenServle/registro.html'">Registarse</button></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+        </header>
+        <table>
+            <tr>
+                <td>
+                    <div class="menu">
+                        <ul>
+                            <li class="lista">Menú  
+                            <ul>
+                                <li class="listadesple"><a>4.0</a>
+                                    <ul>
+                                        <li class="desple"><a href="R4.0.html">Realizar nuevo reporte</a></li>
+                                        <li class="desple"><a href="consulta4">Consultar reportes previos</a></li>
+                                    </ul>
+                                
+                                </li>
+                                <li  class="listadesple"><a>LBD</a>
+                                    <ul>
+                                        <li class="desple"><a href="LBD.html">Realizar nuevo reporte</a></li>
+                                        <li class="desple"><a href="consultabases">Consultar reportes previos</a></li>
+                                    </ul>
+                                 </li> 
+                                <li  class="listadesple"><a>LNT</a>
+                                    <ul>
+                                        <li class="desple"><a href="LNT.html">Realizar nuevo reporte</a></li>
+                                        <li class="desple"><a href="nuevastecnologias">Consultar reportes previos</a></li>
+                                    </ul>
+                                    
+                                </li>
+                                <li  class="listadesple"><a>LDS</a>
+                                    
+                                    <ul>
+                                        <li class="desple"><a href="LDS.html">Realizar nuevo reporte</a></li>
+                                        <li class="desple"><a href="desarrollo">Consultar reportes previos</a></li>
+                                    </ul>
+                                
+                                </li>
+                            </ul>
+                        </li>
+                           
+                        </ul>
+                    </div>
+    </td>
+    <td>
+        <div class="titulo">
+            <h1 style="text-align: center;">Reportes Laboratorio de Desarrollo de Software</h1>
+    </div>
+    <div class="main">
+        <form method="post" name="realizar" action="registroldnt">
+            <label>
+               <p><h2>Contestar el siguiente formulario para realizar tu reporte</h2></p> 
+            </label>
+            <table>
+                <tr>
+                    <td>1. Fecha de Reporte: </td>
+                    <td><input type="text" class="inpt-reporte" id="fecha" ></td>
+                </tr>
+                <tr>
+                    <td>2. Hora de Reporte: </td>
+                    <td><input type="text" class="inpt-reporte" id="hora" ></td>
+                </tr>
+                <tr>
+                    <td>3. Etiqueta de equipo: </td>
+                    <td><input type="text" class="inpt-reporte" id="etiqueta" ></td>
+                </tr>
+                <tr>
+                    <td>4. Serial de equipo: </td>
+                    <td><input type="text" class="inpt-reporte" id="serial" ></td>
+                </tr>
+                <tr>
+                    <td>5. Problema en el monitor: </td>
+                    <td><input type="text" class="inpt-reporte" id="problema-monitor" ></td>
+                </tr>
+                <tr>
+                    <td>6. Problema en algun accesorio: </td>
+                    <td><input type="text" class="inpt-reporte" id="problema-accesorio" ></td>
+                </tr>
+                <tr>
+                    <td>7. Problema en el CPU: </td>
+                    <td><input type="text" class="inpt-reporte" id="problema-CPU" ></td>
+                </tr>
+                <tr>
+                    <td>8. Problema en el Software: </td>
+                    <td><input type="text" class="inpt-reporte" id="problema-software" ></td>
+                </tr>
+                <tr>
+                    <td>9. Nombre del Almno: </td>
+                    <td><input type="text" class="inpt-reporte" id="alumno" ></td>
+                </tr>
+                <tr>
+                    <td>10. Boleta del Alumno: </td>
+                    <td><input type="text" class="inpt-reporte" id="boleta" ></td>
+                </tr>
+                <tr>
+                    <td>11. Grupo: </td>
+                    <td><input type="text" class="inpt-reporte" id="grupo" ></td>
+                </tr>
+                <tr>
+                    <td>12. Asignatura: </td>
+                    <td><input type="text" class="inpt-reporte" id="materia" ></td>
+                </tr>
+                <tr>
+                    <td>13. Docente: </td>
+                    <td><input type="text" class="inpt-reporte" id="docente" ></td>
+                </tr>
+                <tr>
+                    <td>14. Estado del reporte: </td>
+                    <td><input type="text" class="inpt-reporte" id="estado" ></td>
+                </tr>
+                <tr>
+                    <td>15. Prioridad del reporte: </td>
+                    <td><input type="text" class="inpt-reporte" id="prioridad" ></td>
+                </tr>
+                <tr>
+                    <td>16. Responsable (tecnico): </td>
+                    <td><input type="text" class="inpt-reporte" id="responsable" ></td>
+                </tr>
+            </table>
+            <input type="submit" onclick="ldnt()" value="Realizar reporte">
+            <br>
+            <br>
+            <input type="reset" value="borrar datos">
+        </form>
+    </div>
+    </td>
+        </tr>
+    </table> 
+    </body>
+</html>

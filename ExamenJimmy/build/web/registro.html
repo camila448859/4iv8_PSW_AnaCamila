@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <div class="main-contaiener">
+        <header>
+            <div class="botones">
+               <!-- <a href=""><img src="../13ExamenServle/imagen poli.jpg" alt="imagen poli" style="width: 80px; height: 80px;"></a> -->
+                <nav>
+                    <ul>
+                        <li class="lista"><button class="boton"  type="button" value="Iniciar Sesión" onclick="location.href='../13ExamenServle/iniciarS.html'">Iniciar Sesión</button> </li>
+                        <li class="lista"> <button class="boton"  type="button" value="Registrar" onclick="location.href='../13ExamenServle/registro.html'">Registarse</button></li>
+                    </ul>
+    
+                </nav>
+    
+            </div>
+    
+            </header>
+
+    <div class="titulo">
+        <h1 style="text-align: center;">Registro</h1>
+</div>
+<div class="registro">
+    <form method="post" name="realizar" action="registroalumno">
+        <label>
+            <h2 style="text-align: center;">Crea tu cuenta de docente</h2>
+        </label>
+        <table style="text-align:center;">
+            <tr>
+                <td>Numero de empleado: </td>
+                <td><input type="text" class="inpt-reporte" id="num_emple" ></td>
+            </tr>
+            <tr>
+                <td>Nombre: </td>
+                <td><input type="text" class="inpt-reporte" id="nom" ></td>
+            </tr>
+            <tr>
+                <td>Apellido Paterno: </td>
+                <td><input type="text" class="inpt-reporte" id="apellidop" ></td>
+            </tr>
+            <tr>
+                <td>Apellido Materno: </td>
+                <td><input type="text" class="inpt-reporte" id="apellidom" ></td>
+            </tr>
+            <tr>
+                <td>Sexo</td>
+                 <td><input type="text" class="inpt-reporte" id="sex" ></td>
+            </tr>
+            <tr>
+                <td>Fecha de Nacimiento</td>
+                 <td><input type="text" class="inpt-reporte" id="fecha" ></td>
+            </tr>
+            <tr>
+                <td>usuario: </td>
+                <td><input type="text" class="inpt-reporte" id="usuario" ></td>
+            </tr>
+            <tr>
+                <td>Contraseña: </td>
+                <td><input type="text" class="inpt-reporte" id="contra" ></td>
+            </tr>
+            <tr>
+                <td>Rol</td>
+                 <td><input type="text" class="inpt-reporte" id="rol" ></td>
+            </tr>
+            <tr>
+                <td>Selecciona tu imagen</td>
+                <td><input type="file"  id="imagen"></td>
+            </tr>
+            
+        </table>
+        <input type="submit" onclick="registro()" value="registrar docente">
+        <br>
+        <br>
+        <input type="reset" value="borrar datos">
+        <br>
+        <a href="../13ExamenServle/bienvenidos.html">Regresar al inicio</a>
+    </form>
+</div>
+    </body>
+</html>
