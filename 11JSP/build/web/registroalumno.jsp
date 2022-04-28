@@ -82,7 +82,7 @@
             System.out.println("Error al conectar la BD");
             System.out.println(e.getMessage());
             %>
-            <h1>No conecto con la BD T_T</h1>
+            <h1>No conecto con la BD</h1>
             <%
              
        }
